@@ -17,15 +17,15 @@ var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 
 
-app.UseRouting();
+//app.UseRouting();
 app.UseOcelot();
 
-app.UseHttpsRedirection();
-app.UseAuthorization();
-app.MapControllers();
+//app.UseHttpsRedirection();
+//app.UseAuthorization();
+//app.MapControllers();
 
 app.Run();
