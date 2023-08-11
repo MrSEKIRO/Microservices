@@ -1,0 +1,4 @@
+GET http://localhost:5155/api/users
+####
+
+GET http://localhost:5155/api/podcasts
