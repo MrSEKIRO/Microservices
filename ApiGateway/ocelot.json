@@ -7,10 +7,17 @@
         {
           "Host": "localhost",
           "Port": 5043
+        },
+        {
+          "Host": "localhost",
+          "Port": 5001
         }
       ],
       "UpstreamPathTemplate": "/api/users",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamHttpMethod": [ "GET" ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      }
     },
     {
       "DownstreamPathTemplate": "/podcasts",
